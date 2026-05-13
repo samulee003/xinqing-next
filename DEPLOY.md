@@ -37,12 +37,20 @@ git push -u origin main
 
 1. 部署完成後，進入 Vercel Dashboard
 2. 點你的專案 → Settings → Environment Variables
-3. 添加以下兩個變數：
+3. 添加以下三個變數：
 
-| 名稱 | 值 |
-|------|-----|
-| `WECHAT_APPID` | 你的公眾號 AppID（如 wx7c...） |
-| `WECHAT_APPSECRET` | 你的公眾號 AppSecret（如 e8ec...） |
+| 名稱 | 值 | 說明 |
+|------|-----|------|
+| `WECHAT_APPID` | 你的公眾號 AppID（如 wx7c...） | 微信發布用 |
+| `WECHAT_APPSECRET` | 你的公眾號 AppSecret（如 e8ec...） | 微信發布用 |
+| `GLM_API_KEY` | 你的 GLM API Key（如 xxxxxxxx.yyyyyyyy） | AI 生成文章和圖片用 |
+
+> 💡 **如何獲取 GLM API Key？**
+> 1. 打開 https://open.bigmodel.cn/
+> 2. 註冊/登入帳號
+> 3. 進入「API Keys」頁面
+> 4. 點「添加新的 API Key"
+> 5. 複製 Key（格式類似 `xxxxxxxx.yyyyyyyy`）
 
 4. 點 "Save"
 5. 回到專案頁面，點 "Redeploy" 重新部署
